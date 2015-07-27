@@ -1,7 +1,7 @@
 build_mwzip_command
 ===================
 
-This program was written for the [PediaPress mwlib] (https://github.com/pediapress/mwlib) MediaWiki parser and utility library. It will build a complete mw-zip command to create an archive of Wikimedia files for a given topic by build a list of topic pages to any level of recursion you choose. The command:
+This program was written for the [PediaPress mwlib] (https://github.com/pediapress/mwlib) MediaWiki parser and utility library. It will build a complete mw-zip command to create an archive of Wikimedia files for a given topic by building a list of topic pages to any level of recursion you choose. The command:
 
 build_mwzip_command -t "Computer networking" -l 2 -x"Unwanted category,Another unwanted category" -w"binomial,stubs"
 
