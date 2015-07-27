@@ -6,7 +6,8 @@ This program was written for the [PediaPress mwlib] (https://github.com/pediapre
 build_mwzip_command -t "Computer networking" -l 2 -x"Unwanted category,Another unwanted category" -w"binomial,stubs"
 
 Will create the mw-zip command necessary to pull all topic and category titles for the "Computer networking" topic with 2 levels of recursion excluding the -x category titles and excluding any category titles with the -w skip word list.
-<code>
+##Usage
+<pre><code>
 usage: build_mwzip_command.py [-h] -t TOPIC [-l LEVELS] [-i] [-s]
                               [-x EXCLUDECATS [EXCLUDECATS ...]]
                               [-w EXCLUDEWORDS [EXCLUDEWORDS ...]]
@@ -28,4 +29,4 @@ optional arguments:
   -w EXCLUDEWORDS [EXCLUDEWORDS ...], --excludeWords EXCLUDEWORDS [EXCLUDEWORDS ...]
                         Skip-words for excluding categories by word. For
                         example -wdating,skipjack
-</code>
+</code></pre>
