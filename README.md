@@ -3,9 +3,13 @@ build_mwzip_command
 
 This program was written for the [PediaPress mwlib] (https://github.com/pediapress/mwlib) MediaWiki parser and utility library. It will build a complete mw-zip command to create an archive of Wikimedia files for a given topic by building a list of topic pages to any level of recursion you choose. The command:
 
-build_mwzip_command -t "Computer networking" -l 2 -x"Unwanted category,Another unwanted category" -w"binomial,stubs"
+build_mwzip_command -t "Computer networking" -l 2 -x"Unwanted category,Another unwanted category" -wbinomial,stubs
 
-Will create the mw-zip command necessary to pull all topic and category titles for the "Computer networking" topic with 2 levels of recursion excluding the -x category titles and excluding any category titles with the -w skip word list.
+- will create the mw-zip command necessary to pull all topic and category titles for the "Computer networking" topic 
+- with 2 levels of recursion 
+- excluding the -x category titles "Unwanted category" and "Another unwanted category"
+- excluding any category titles containing the -w skip words "binomial" and "stubs"
+
 ##Usage
 <pre><code>
 usage: build_mwzip_command.py [-h] -t TOPIC [-l LEVELS] [-i] [-s]
